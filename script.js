@@ -6,18 +6,18 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
   {
-    enunciado: "Pergunta 1",
+    enunciado: "Qual é a cor dos olhos da Bia?",
     alternativas: [
-      "Resposta 1",
-      "Resposta 2"
+      "Azul",
+      "Castanho"
     ]
   },
 
   {
-    enunciado: "Pergunta 2",
+    enunciado: "Quem é o melhor vilão Jason ou Fred Krügger",
     alternativas: [
-      "Resposta 1",
-      "Resposta 2"
+      "Jason",
+      "Fred"
     ]
   },
 
@@ -45,3 +45,18 @@ const perguntas = [
     ]
   }
 ];
+
+let atual = 0;
+let perguntaAtual;
+
+function mostraAlternativas () {
+  for (const alternativa of perguntaAtual.alternativas) {
+    
+  }
+}
+function mostraPergunta() {
+  perguntaAtual = perguntas[atual];
+  caixaPerguntas.textContent = perguntaAtual.enunciado;
+}
+
+mostraPergunta();
